@@ -18,7 +18,7 @@ RUN poetry install --no-interaction --no-ansi --no-root
 COPY . .
 
 # Install the application
-RUN poetry install --no-interaction --no-ansi
+RUN poetry install --no-interaction --no-ansi --no-root
 
 # Command to run the application
 CMD ["poetry", "run", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "{{ cookiecutter.backend_port }}"]
