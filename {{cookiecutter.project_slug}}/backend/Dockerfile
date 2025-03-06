@@ -1,9 +1,9 @@
-FROM python:3.9-slim
+FROM python:{{ cookiecutter.python_version }}-slim
 
 WORKDIR /app
 
 # Install Poetry
-RUN pip install poetry==1.5.1
+RUN pip install poetry
 
 # Copy poetry configuration files
 COPY pyproject.toml poetry.lock* ./

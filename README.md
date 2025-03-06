@@ -35,6 +35,7 @@ cookiecutter gh:nsnguyen/cookiecutter-fastapi-react
 If you want to modify this template or create your own based on it:
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/nsnguyen/cookiecutter-fastapi-react.git
    cd cookiecutter-fastapi-react
@@ -43,19 +44,21 @@ If you want to modify this template or create your own based on it:
 2. Make your desired changes to the files in the `{{cookiecutter.project_slug}}/` directory
 
 3. Test your modified template by generating a project locally:
+
    ```bash
    # From the repository root directory
    cookiecutter .
    ```
 
 4. Once satisfied, push to your own GitHub repository:
+
    ```bash
    git push origin main
    ```
 
 5. Then use your modified template:
    ```bash
-   cookiecutter gh:yourusername/cookiecutter-fastapi-react
+   cookiecutter gh:nsnguyen/cookiecutter-fastapi-react
    ```
 
 Follow the prompts to configure your project:
@@ -66,7 +69,7 @@ Follow the prompts to configure your project:
 - `author_name`: Your name
 - `author_email`: Your email
 - `version`: Initial version of your project
-- `python_version`: Python version for backend development
+- `python_version`: Python version for backend development (3.9, 3.10, 3.11, 3.12)
 - `use_docker`: Whether to include Docker configuration
 - `frontend_port`: Port for the React frontend (default: 3000)
 - `backend_port`: Port for the FastAPI backend (default: 8000)

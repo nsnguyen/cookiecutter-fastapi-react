@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "python-react-backend"
-version = "0.1.0"
-description = "FastAPI backend for Python-React Template"
-authors = ["Your Name <your.email@example.com>"]
+name = "{{ cookiecutter.project_slug }}-backend"
+version = "{{ cookiecutter.version }}"
+description = "{{ cookiecutter.project_description }} - Backend"
+authors = ["{{ cookiecutter.author_name }} <{{ cookiecutter.author_email }}>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^{{ cookiecutter.python_version }}"
 fastapi = "^0.103.1"
 uvicorn = "^0.23.2"
 pydantic = "^2.3.0"
