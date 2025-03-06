@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "python-react-backend"
+version = "0.1.0"
+description = "FastAPI backend for Python-React Template"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.103.1"
+uvicorn = "^0.23.2"
+pydantic = "^2.3.0"
+pydantic-settings = "^2.0.3"
+python-dotenv = "^1.0.0"
+numpy = "^1.25.2"
+email-validator = "^2.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+httpx = "^0.24.1"
+pytest-cov = "^4.1.0"
+black = "^23.7.0"
+isort = "^5.12.0"
+flake8 = "^6.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 150
+
+[tool.isort]
+profile = "black"

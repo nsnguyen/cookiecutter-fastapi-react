@@ -27,32 +27,35 @@ A cookiecutter template for creating a full-stack application with Python FastAP
 pip install cookiecutter
 
 # Generate a new project
-cookiecutter gh:yourusername/cookiecutter-fastapi-react
-# Or directly from a local template
-cookiecutter /path/to/cookiecutter-fastapi-react
+cookiecutter gh:nsnguyen/cookiecutter-fastapi-react
 ```
 
-### Completing Template Setup
+### Template Development
 
-Before using this template, complete the setup by following these steps:
+If you want to modify this template or create your own based on it:
 
-1. Copy your backend files to the template directory:
+1. Clone the repository:
    ```bash
-   cp -r backend/* {{cookiecutter.project_slug}}/backend/
+   git clone https://github.com/nsnguyen/cookiecutter-fastapi-react.git
+   cd cookiecutter-fastapi-react
    ```
 
-2. Copy your frontend files to the template directory:
+2. Make your desired changes to the files in the `{{cookiecutter.project_slug}}/` directory
+
+3. Test your modified template by generating a project locally:
    ```bash
-   cp -r frontend/* {{cookiecutter.project_slug}}/frontend/
+   # From the repository root directory
+   cookiecutter .
    ```
 
-3. Ensure that any hardcoded port numbers are replaced with template variables:
-   - Replace "8000" with "{{ cookiecutter.backend_port }}"
-   - Replace "3000" with "{{ cookiecutter.frontend_port }}"
-
-4. Test your template by generating a project:
+4. Once satisfied, push to your own GitHub repository:
    ```bash
-   cookiecutter /path/to/cookiecutter-fastapi-react
+   git push origin main
+   ```
+
+5. Then use your modified template:
+   ```bash
+   cookiecutter gh:yourusername/cookiecutter-fastapi-react
    ```
 
 Follow the prompts to configure your project:
