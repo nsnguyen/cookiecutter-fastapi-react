@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
       target: production
     ports:
-      - "{{ cookiecutter.backend_port }}:{{ cookiecutter.backend_port }}"
+      - "8080:{{ cookiecutter.backend_port }}"
     environment:
       - ENVIRONMENT=production
       - PORT={{ cookiecutter.backend_port }}
